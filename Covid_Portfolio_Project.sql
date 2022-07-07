@@ -246,6 +246,7 @@ FROM Percentage_population_vaccinated
 
 
 -- Creating view to store data for later visualizations
+DROP VIEW IF EXISTS percentage_population_vaccinated_view;
 CREATE VIEW percentage_population_vaccinated_view AS 
 SELECT cd.continent, 
 	   cd.location, 
